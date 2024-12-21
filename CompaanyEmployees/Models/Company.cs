@@ -5,7 +5,7 @@ namespace CompaanyEmployees.Models
     [Table("Company")]
     public class Company
     {
-        
+        [Key]
         [Column("CompanyId")]
         public Guid Id { get; set; }
         [Required(ErrorMessage = "Company name is a required field.")]

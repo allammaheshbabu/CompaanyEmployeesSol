@@ -3,8 +3,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CompaanyEmployees.Models
 {
+    [Table("Employee")]
     public class Employee
     {
+        [Key]
         [Column("EmployeeId")]
         public Guid Id { get; set; }
         [Required(ErrorMessage = "Employee name is a required field.")]
